@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+      
+        .container {
+          width: 960px;
+          
+          margin: 0 auto;
+          border: 1px solid #000;
+        }
+      
+        .col {
+          box-sizing: border-box;
+          border: 5px outset #fa0;
+          width: 300px;
+          padding: 10px;
+          margin: 10px;
+          float: left;
+        }
+      
+        .colorbox{
+          border: 1px solid #000;
+          width:960px;
+          height:50px;
+          margin:0 auto;
+          background: yellowgreen;
+        }
+        .clearfix::before,.clearfix::after{
+  content:"";
+  display: block;
+  clear:both;
+}
+      </style>
+      
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="col ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at delectus, ut vitae perferendis velit eos dolorum impedit autem error. Ab reiciendis quae tenetur sed maiores id eaque veritatis. Consectetur est quae magni, id nihil ad ullam repudiandae cum excepturi asperiores distinctio incidunt nulla quod suscipit laboriosam cumque atque veritatis?</div>
+        <div class="clearfix">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at delectus, ut vitae perferendis velit eos dolorum impedit autem error. Ab reiciendis quae tenetur sed maiores id eaque veritatis. Consectetur est quae magni, id nihil ad ullam repudiandae cum excepturi asperiores distinctio incidunt nulla quod suscipit laboriosam cumque atque veritatis?</div>
+        <div class="clearfix col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum at delectus, ut vitae perferendis velit eos dolorum impedit autem error. Ab reiciendis quae tenetur sed maiores id eaque veritatis. Consectetur est quae magni, id nihil ad ullam repudiandae cum excepturi asperiores distinctio incidunt nulla quod suscipit laboriosam cumque atque veritatis?</div>
+</div>
+</body>
+</html>
