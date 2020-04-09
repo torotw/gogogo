@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+div.demo1{
+width: 400px;
+height:400px;
+border:1px solid black;
+
+background: rgb(0,36,13);
+background: linear-gradient(to left, rgba(0,36,13,0.3) 0%, rgba(9,68,121,0.3) 25%, rgba(0,255,205,0.3) 75%),url("https://picsum.photos/400/400/?random=1"); 
+
+
+}
+
+div.demo2{
+width:400px;
+height:300px;
+background:linear-gradient(to left bottom,purple,transparent 20%), /*線性的是用to*/
+radial-gradient(circle at left,red,transparent 80%),/*加circle會比較圓一點*/
+radial-gradient(circle at right,blue,transparent 20%),/*加circle會比較圓一點*/
+radial-gradient(circle at center top,green,transparent 80%);/*加circle會比較圓一點*/
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <img src="https://picsum.photos/400/400/?random=1"  style="border:1px solid black" alt="">
+</body>
+</html>

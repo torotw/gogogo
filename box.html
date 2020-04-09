@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 10px solid #000;
+            padding: 10px;
+            margin: 100px;
+            
+        }
+        span {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            padding: 100px;
+            /* 行內元素MARGIN上下區無效 */
+            margin: 10px;
+        }
+      div{
+          display: block;
+      }
+ 
+
+div.out{
+    width: 100px;
+            height: 100px;
+            border: 10px solid #000;
+            padding: 100px;
+            /* 行內元素MARGIN上下區無效 */
+            margin: 100px;
+
+}
+
+<style type="text/css">
+    section    {
+        margin-top: 13px;
+        margin-bottom: 87px;
+    }
+
+    header {
+        margin-top: 87px;
+    }
+
+    footer {
+        margin-bottom: 13px;
+    }
+</style>
+    </style>
+
+
+
+</head>
+
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur </div>
+
+    <div class="out">11111Lorem ipsum dolor sit amet consectetur</div>
+    <span>Lorem ipsum dolor sit amet consectetur </span>  
+    <!-- 因為inline上下沒意義，所以span這行內元素會卡margin的位置。 -->
+    <div>Lorem ipsum dolor sit amet consectetur </div>
+    <br>
+    <br>
+    <br>
+    <span>Lorem ipsum dolor sit amet consectetur </span>
+    <span>Lorem ipsum dolor sit amet consectetur </span>
+
+    <section>
+        <header>上邊界重疊是 87</header>
+        <footer>下邊界重疊還是 87 不能再高了</footer>
+    </section>
+
+
+<p>
+Lorem ipsum dolor sit, amet consectetur <a href="#">adipisicing elit. Fuga nostrum</a> adipisicing elit. Fuga nostrum repellendus ducimus iusto accusantium minus doloribus provident, laborum blanditiis quos ab at illo similique dolorem suscipit rerum dolorum quibusdam deserunt!
+
+</p>
+
+</body>
+
+</html>
