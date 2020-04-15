@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+            text-align: center;
+            flex-direction: column;
+
+        }
+
+        .ani1 {
+            width: 400px;
+            height: 400px;
+            background-color: darkorange;
+            /* position: relative; */
+
+            /* 影格名稱(keyframes name)*/
+            /* animation-name: demo1; */
+            /* 動畫總時間 */
+            /* animation-duration: 1s; */
+            /* 速度函式 */
+            /* animation-timing-function: linear; */
+            /* 動畫延遲時間
+            animation-delay: 0.5s;*/
+            /* 播放重複次數 */
+            /* animation-iteration-count: infinite;  */
+
+            /* 循環方式 */
+            animation-direction: alternate;
+            /* 停留 */
+            animation-fill-mode: forwards;
+
+            /*
+            簡寫
+            animation: demo1 1s  ease-in-out 0s 4 alternate forwards; */
+
+        }
+
+
+        .ani2 {
+            display: flex;
+            width: 500px;
+            height: 200px;
+            background-color: darkorange;
+            border-radius: 5px;
+            /* position: relative; */
+            text-align: center;
+            /* line-height: 250px; */
+            align-items: center;
+            justify-content: center;
+            /* overflow: hidden; */
+        }
+
+        .ani2::after {
+            content: "";
+            background: darkviolet;
+
+            background: linear-gradient(135deg, red 30%,
+                    rgba(255, 255, 255, 0.4) 50%,
+                    darkviolet 100%);
+
+            /* background: linear-gradient(135deg,
+                    rgba(255, 255, 255, 0) 30%,
+                    rgba(255, 255, 255, 0.4) 50%,
+                    rgba(255, 255, 255, 0) 70%); */
+            /* transform: translateX(-100%); */
+            position: absolute;
+
+
+            /* left: -100%;
+            top: -100%;
+            right: -100%;
+            bottom: -100%; */
+            opacity: 0.5;
+            width: 500px;
+            height: 200px;
+            left: 0;
+            top: 0;
+            transform: translateX(0%);
+            animation: demo2 3s linear infinite;
+
+        }
+
+        .ani1:hover {
+            animation-name: demo1;
+        }
+
+        @keyframes demo1 {
+            from {
+                background-color: #000;
+                left: 0;
+            }
+
+            to {
+                background-color: #fa0;
+                left: 50px;
+            }
+        }
+
+
+
+        @keyframes demo2 {
+            0% {
+                transform: translateX(0%);
+
+            }
+
+            /* 70% {
+                transform: translateX(50%);
+            } */
+
+            100% {
+                transform: translateX(100%);
+            } 
+        }
+
+     
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <!-- <div class="ani1">Hello world</div> -->
+    <div class="ani2">Button</div>
+</body>
+
+</html>

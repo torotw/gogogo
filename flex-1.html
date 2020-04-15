@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        div.flex {
+          background: #ccc;
+          height: 500px;
+      
+          display: flex;
+          /* flex-direction: row;
+          flex-wrap: wrap; */
+          flex-flow:row wrap;
+          justify-content: center;
+          align-items: stretch;
+          /* align-items: center; */
+        }
+      
+        p.item {
+          margin: 0;
+          width: 200px;
+        }
+      
+        .red {
+          background: red;
+          height: 200px;
+        }
+      
+        .blue {
+          background: blue;
+        }
+      /* 沒加高度會因為FLEX而拉滿版 */
+        .green {
+          background: green;
+        }
+        .blue {
+  background: blue;
+  align-self: center;
+}
+      </style>
+</head>
+<body>
+    <div class="flex">
+        <p class="item red">A</p>
+        <p class="item blue">B</p>
+        <p class="item green">C</p>
+      </div>
+</body>
+</html>

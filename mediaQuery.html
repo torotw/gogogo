@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0 auto;
+        }
+
+        /* 寬480以上 */
+        @media (max-width:319px) {
+            body {
+                background: lightgreen;
+
+            }
+        }
+
+        @media (min-width:320px) and (max-width:549px) {
+            body {
+                background: rgb(49, 33, 143);
+
+            }
+        }
+
+        @media (min-width:550px) and (max-width:767px) {
+            body {
+                background: rgb(233, 229, 17);
+
+            }
+        }
+
+        @media (min-width:768px) and (max-width:959px) {
+            body {
+                background: rgb(87, 39, 21);
+
+            }
+        }
+
+
+        @media print,
+        (min-width:960px) {
+            body {
+                background: red;
+
+            }
+
+            .box {
+                /* !important;提升優先權 */
+                width: 45% ;
+                float: left;
+            }
+        }
+
+        .box {
+            background: maroon;
+            width: 45%;
+            height: 50px;
+            margin: 2.5%;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>Hello world</h1>
+    <div class="box"></div>
+    <div class="box"></div>
+
+
+    
+  
+<tr>
+    <td>首頁</td>
+    <td>網站導覽</td>
+    <td>關於我們首頁</td>
+    <td>網站導覽</td>
+    <td>關於我們</td>
+</tr>
+    
+
+
+</body>
+
+</html>

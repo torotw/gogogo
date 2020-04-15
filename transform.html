@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            margin: 0;
+            text-align: center;
+            color: white;
+
+
+
+            /* vh代表view height，指的是螢幕可視範圍高度的百分比，
+而vw則代表view width，是指螢幕可視範圍寬度的百分比。
+vmin：寬度或高度較小值的百分比
+vmax：寬度或高度較大值的百分比 */
+
+            /* 對齊100%視窗高度的中間 */
+            height: 100vh;
+
+            /* 對父容器下的容器空間內的項目做彈性調整 */
+
+
+            /* flex有inline的效果 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+
+
+
+
+        .box {
+            position: relative;
+            /* left: 100PX;
+            top: 100PX; */
+            width: 100px;
+            height: 200px;
+            background: darkseagreen;
+
+            /* line-height: 100px; */
+            transition: background-color 5s ease 0s, width 3s ease 0s;
+        }
+
+        .box1 {
+
+            /* 加了position: absolute;喪失自已位置，故BOX2被置中 */
+            position: absolute;
+            left: 20px;
+            top: 20px;
+
+
+            /* 內部大小把BOX2文字往外推 */
+            width: 50px;
+            height: 100px;
+            background: gold;
+            /* line-height: 100px; */
+            display: inline-block;
+        }
+
+        /* 因為上一個區塊設RELATIVE所以有了定位點，所以跟著他定位
+不然設FLEX為彈性空間區塊，會依父容器定位 */
+        .box:hover {
+            background: yellow;
+            width: 500px;
+        }
+
+
+
+        .box::after {
+            content: "after";
+
+            /* 會往上找是否有RELATIV，或ABSOLUTE做定位，如果沒有則依父容器的位置做定位 */
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            /* opacity:0.5; */
+            background: darkred;
+            /* width:100px; */
+            /* height:100px; */
+
+            /* 平移比例 */
+            /* transform:translateX(50%) translateY(50%); */
+
+            /* 縮放大小 */
+
+            /* transform:scale(3.5); */
+
+        }
+
+        .box2-1{
+
+
+            /* 會往上找是否有RELATIV，或ABSOLUTE做定位，如果沒有則依父容器的位置做定位 */
+            position: absolute;
+            /* left: 0px;
+            top: 0px; */
+            /* opacity: 0.5; */
+            background: red;
+            width: 200px;
+            height: 100px;
+
+            /* 平移比例 */
+            /* transform:translateX(50%) translateY(50%); */
+
+            /* 縮放大小 */
+
+            /* transform:scale(3.5); */
+
+        }
+
+        .box2-2 {
+
+
+            /* 會往上找是否有RELATIV，或ABSOLUTE做定位，如果沒有則依父容器的位置做定位 */
+            position: absolute;
+            /* left: 0px;
+top: 0px; */
+            /* opacity: 0.5; */
+            background: red;
+            width: 200px;
+            height: 100px;
+
+            /* 平移比例 */
+            /* transform:translateX(50%) translateY(50%); */
+
+            /* 縮放大小 */
+
+            /* transform:scale(3.5); */
+
+        }
+
+        .box2-3{
+
+
+            /* 會往上找是否有RELATIV，或ABSOLUTE做定位，如果沒有則依父容器的位置做定位 */
+            position: absolute;
+            /* left: 0px;
+top: 0px; */
+            /* opacity: 0.5; */
+            background: red;
+            width: 200px;
+            height: 100px;
+
+            /* 平移比例 */
+            /* transform:translateX(50%) translateY(50%); */
+
+            /* 縮放大小 */
+
+            /* transform:scale(3.5); */
+
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="box">Before</div>
+
+    <div class="box2-1">box2-1<div class="box2-2">box2-2 <div class="box2-3">box2-3<div class="box1">box1</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
